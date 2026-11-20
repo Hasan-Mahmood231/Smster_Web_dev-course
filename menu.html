@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+        /* Remove default list styles */
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: #333;
+        }
+
+        ul li {
+            position: relative; /* Needed to anchor the absolute dropdown */
+            padding: 1rem 2rem;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%; /* Positions dropdown right below the main menu item */
+            left: 0;
+            flex-direction: column; /* Stack dropdown items vertically */
+            background-color: #444;
+            min-width: 150px;
+        }
+
+        .dropdown li {
+            padding: 0.75rem 1rem;
+            white-space: nowrap;
+        }
+
+        /* Show dropdown when hovering over the parent <li> */
+        li:hover .dropdown {
+            display: flex;
+        }
+
+        /* Optional hover effect */
+        ul li:hover {
+            background-color: #555;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Courses</a>
+                <ul class="dropdown">
+                    <li><a href="#">Math</a></li>
+                    <li><a href="#">Computer</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav> -->
+
+    <span>im an </span><p>hassan khan</p>
+</body>
+</html>
