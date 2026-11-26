@@ -1,30 +1,3 @@
-let name = "hassan"
-let age = 23
-let semester = 4
-
-// console.log("My name is " + name + "\nAge is "+ age + "\nAnd the semester is "+ semester)
-// print all these again and each one in new line
-console.log()
-
-
-let array = [1, 2, 3, 4, 5]
-console.log(array[0] + "\n" + array[4] + "\n" + array.length)
-
-for (let i = 0; i< array.length; i++){
-    console.log(array[i] + "->" + array[i] * 2)
-}
-
-
-//printing all item in single line 
-// console.log(array.join("<-> "))
-
-//printing the verious type of data in same arrray
-data = [1, "hassan", 23, true, null, undefined, {name: "hassan", age: 23}, [1, 2, 3]]
-
-for (let i = 0; i< data.length; i++){
-    console.log(data[i] + "-> " + typeof data[i])
-}
-
 
 let obj = {
     name: "hassan",
@@ -70,3 +43,4 @@ let obj = {
 
 // obj.showdetial()
 obj.deposit(8000)
+obj.withdraw(170)
